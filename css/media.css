@@ -1,0 +1,390 @@
+/* 
+320px - 480px: dispositivos móveis;
+481px - 768px: tablets;
+769px - 1024px: telas pequenas, laptops;
+1025px - 1200px: desktops;
+1201px - 1600px: telas grandes;
++1601px: TVs e tela grandes.
+*/
+
+/* 1024px: telas pequenas, laptops */
+@media screen and (max-width: 1024px) {
+
+    /*#region header */
+    .btnMenu {
+        font-size: 50px;
+        padding: 10px;
+        color: white;
+        /* display: none; */
+    }
+
+    .btnMenu:hover {
+        color: dodgerblue;
+        transition: .3s;
+        /* display: none; */
+
+    }
+
+    /* navbar */
+    .navbar {
+        height: 70px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    ul.open {
+        overflow: visible;
+    }
+
+
+    ul.sub {
+        position: absolute;
+        display: none;
+        min-width: 160px;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 0;
+        text-align: center;
+
+        right: 150px;
+    }
+
+    /*#endregion header */
+
+    /*#region produtcs */
+    .cardProd {
+        width: 40%;
+    }
+
+    /*#endregion produtcs */
+
+    /*#region contact */
+    .contactC {
+        /* PROPRIEDADE ALTERADA */
+        width: 80%;
+
+        margin: 0 auto;
+    }
+
+    /*#endregion contact */
+
+}
+
+/* 768px: tablets */
+@media screen and (max-width: 768px) {
+
+
+    /*#region about */
+    #about {
+        background-position: center;
+        background-attachment: fixed;
+        padding: 2.5em 0;
+    }
+
+    .aboutC {
+        width: 90%;
+        color: white;
+        text-align: center;
+    }
+
+    .aboutC h2 {
+        margin-bottom: 2em;
+        font-size: 2em;
+    }
+
+    .cardTitulo {
+        height: 70px;
+        line-height: 70px;
+        background-color: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        font-size: 8px;
+    }
+
+    .cardTitulo h3 {
+        font-size: 25px;
+        padding: 0 0 70px 0;
+    }
+
+    .card li {
+        background-color: rgba(255, 255, 255, .2);
+        position: relative;
+    }
+
+    .card li img {
+        width: 18vh;
+        height: 18vh;
+        border-radius: 50%;
+        margin: .5em 0;
+        border: 1px solid white;
+        position:relative;
+    }
+
+    .cardCargo {
+        color: white;
+        background-color: rgba(255, 255, 255, .2);
+        font-size: .5em;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .socialMedia {
+        color: white;
+        background-color: rgba(255, 255, 255, .2);
+        font-size: 1em;
+        height: 80px;
+        line-height: 80px;
+        top: 5em;
+        margin-bottom: 50px;
+        transition: .3s;
+    }
+
+    .socialMedia i:hover {
+        color: #40E0D0;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    /*#endregion about */
+
+
+    /*#region footer */
+    .footerC h5 {
+        font-size: .8em !important;
+        color: white;
+    }
+
+    /*#endregion footer */
+
+}
+
+/* 480px: dispositivos móveis */
+@media screen and (max-width: 480px) {
+    /*#region home */
+    .homeC {
+        position: relative;
+        width: 100%;
+        height: 80%;
+    }
+
+    /* PROPIEDADE ADICIONADA */
+    video {
+        display: none;
+    }
+
+    .homeI {
+        position: relative;
+        background-color: rgba(0, 0, 0, 1);
+        height: 350px;
+    }
+
+    /* PROPIEDADE ADICIONADA */
+    .homeI h1 {
+        display: none;
+    }
+
+    /*#endregion home */
+
+    /*#region products */
+    .cardProd {
+        width: 100%;
+    }
+
+    /*#endregion products */
+
+    /*#region footer */
+    footer {
+        font-size: .8em;
+        position: relative;
+    }
+
+    .footerC {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        opacity: .9;
+    }
+
+    .footerC ul li {
+        height:10px;
+        line-height:10px;
+        opacity: .8;
+        transition: .3s;
+        color: white;
+    }
+
+    .footerC ul li:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .footerC h5 {
+        color: white;
+        font-size: 10px;
+
+    }
+
+    /*#endregion footer */
+}
+
+/* 320px: dispositivos móveis */
+
+@media screen and (max-width: 320px) {
+
+    /*#region header */
+    .bntMenu {
+        font-size: 10px;
+        padding: 20px;
+        color: white;
+        color: #40E0D0;
+        transition: .3s;
+        display: block;
+    }
+
+    .bntMenu:hover {
+        color: #008B8B;
+        transition: .3s;
+    }
+
+    .menu {
+        width: 80%;
+        height: 20px;
+        background-color: rgb(0, 0, 0, .5s);
+        position: fixed;
+        z-index: 100;
+    }
+
+    .logo {
+        width: 10%;
+        height: 10px;
+        line-height: 10px;
+        color: white;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo i {
+        font-size: 5px;
+    }
+
+    /* navBar */
+    .navbar {
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar li {
+        padding: 0 5px;
+    }
+
+    .navbar button {
+        padding: 10px 25px;
+        border: none;
+        margin-left: 10px;
+        background-color: aquamarine;
+        transition: .3s;
+        cursor: pointer;
+        color: white;
+    }
+
+    .navbar button:hover {
+        background-color: #40E0D0;
+        transition: .3s;
+    }
+
+    .navbar li a {
+        height: 20px;
+        line-height: 20px;
+        padding: 20px 25px;
+    }
+
+    .navbar li a:hover:not(.sub a:hover) {
+        background-color: #40E0D0;
+    }
+
+    /*#endregion header */
+
+    /* #region home */
+    .sobreC {
+        position: relative;
+        width: 100%;
+        padding: 100px 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+
+    .sobreC h2 {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        width: 100%;
+        /* propriedade adicionada */
+        height: 300px;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .sobreC p {
+        font-size: 10px;
+        color: white;
+        /* propriedade adicionada */
+        display: none;
+    }
+
+    /* #endregion home */
+
+
+    /* #region footer */
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #03020b;
+        padding: 50px 0;
+        font-size: 10px;
+    }
+
+    .footerC {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        opacity: .6;
+        transition: .3s;
+    }
+
+    .footerC ul li {
+        height: 10px;
+        line-height: 10px;
+        transition: .3s;
+    }
+
+    .footerC ul li:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    .footerC h5 {
+        color: white;
+        position: absolute;
+    }
+
+    /* #endregion footer */
+
+}

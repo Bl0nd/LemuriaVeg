@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <title>Lemuria Veg</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <!-- menu -->
+                <div class="menu">
+                    <a href="index.html#home" class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                    <!-- botões do menu -->
+                    <ul class="navbar open">
+                        <a href="" class="btnMenu"><i class='bx bx-menu'></i></a>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos </i></a>
+                        </li>
+                        <li><a href="index.html#products">Galeria</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="_login">
+                <h4>Login</h4>
+                <h5>Confirme que você é você</h5>
+                <div class="contactC">
+                    <form>
+                        <ul class="contactI">
+                            <li><input type="text" placeholder="Nome:" autocomplete="off" id="nome" autofocus required>
+                            </li>
+                            <li><input type="password" placeholder="Senha:" autocomplete="off" id="senha" maxlength="5"
+                                    required></li>
+                            <li>
+                                <input type="submit" class="btnDefault" value="entrar" onclick="logar(); return false">
+                                <input type="reset" class="btnDefault" value="resetar">
+                            </li>
+                            <li>
+                                <a href="#">Não lembro da senha</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- footer -->
+            <div class="footerC">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index.html#products">Galeria</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+                <a href="index.html#home" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <h5>Lemuria &copy; Todos os direitos reservados | desde 2012</h5>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- scripts -->
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- script local -->
+    <script src="script/script.js"></script>
+</body>
+
+</html>

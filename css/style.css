@@ -1,0 +1,387 @@
+/*#region globais seletores*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Light.otf');
+}
+
+/* unidades relativas */
+/* rem */
+html {
+    font-size: 28px;
+    scroll-behavior: smooth;
+    background-color: #333;
+}
+
+/* em */
+body {
+    font-size: 14px;
+}
+
+html,
+body,
+textarea {
+    /* overflow-x: hidden; */
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: 6.4em;
+    padding: .5em 0;
+}
+
+h2 {
+    font-size: 5.2em;
+}
+
+h3 {
+    font-size: 4em;
+}
+
+h4 {
+    font-size: 2.8em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+a {
+    font-size: 1.5em;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+/* btnDefault */
+.btnDefault {
+    background-color: #008B8B;
+    font-size: 1em;
+    padding: 1em 2em;
+    color: white;
+    margin: 1em auto;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.btnDefault:hover {
+    background-color: #40E0D0;
+    font-size: 1em;
+    padding: 1.5em 2em;
+    color: white;
+    margin: 1em auto;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+
+/*#endregion globais seletores*/
+
+/*#region head */
+.btnMenu {
+    font-size: 50px;
+    padding: 10px;
+    color: white;
+    color: #40E0D0;
+    /* display: none; */
+}
+
+.btnMenu:hover {
+    color: #008B8B;
+    transition: .3s;
+    /* display: none; */
+}
+
+/* classes */
+.container {
+    width: 100%;
+}
+
+/* header */
+.menu {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+}
+
+.logo i {
+    font-size: 300px;
+}
+
+/* navbar */
+.navbar {
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    padding: 50px 5px;
+}
+
+.navbar button {
+    padding: 10px 25px;
+    border: none;
+    margin-left: 10px;
+    background-color: #008B8B;
+    transition: .3s;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar button:hover {
+    background-color: #40E0D0;
+    transition: .3s;
+}
+
+.navbar li a {
+    height: 70px;
+    line-height: 70px;
+    padding: 20px 25px;
+    color: aliceblue;
+}
+
+.navbar li a:hover:not(.sub a:hover) {
+    background-color: #40E0D0;
+}
+
+/*#endregion head */
+
+/*#region home */
+.homeC {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}
+
+.homeI {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 99;
+}
+
+.homeI h1 {
+    font-size: 6em;
+    color: white;
+}
+
+.homeI h2 {
+    font-size: 4em;
+    color: white;
+}
+
+/*#endregion home */
+
+/*#region sobre */
+.sobreC {
+    background-color: #03020b;
+    width: 100%;
+    padding: 100px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.sobreC h2 {
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    left: 40px;
+    color: white;
+    text-shadow: 2px 2px 3px #333;
+}
+
+.sobreC p {
+    top: 100px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+/*#endregion sobre */
+
+/*#region about */
+#about {
+    background-position: center;
+    background-attachment: fixed;
+    padding: 7.5em 0;
+}
+
+.aboutC {
+    width: 90%;
+    color: white;
+    text-align: center;
+}
+
+.aboutC h2 {
+    margin-bottom: 5em;
+}
+
+.cardTitulo {
+    height: 170px;
+    line-height: 170px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 8px;
+}
+
+.cardTitulo h3 {
+    padding-left: 120px;
+}
+
+.card li {
+    background-color: rgba(255, 255, 255, .2);
+    position: relative;
+}
+
+.card li img {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    margin: 1.5em 0;
+    border: 3px solid white;
+    position: absolute;
+}
+
+.cardCargo {
+    color: white;
+    background-color: rgba(255, 255, 255, .2);
+    font-size: .6em;
+    height: 50px;
+    line-height: 50px;
+}
+
+.socialMedia {
+    color: white;
+    background-color: rgba(255, 255, 255, .2);
+    font-size: 2em;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 50px;
+    transition: .3s;
+}
+
+.socialMedia i:hover {
+    color: #40E0D0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/*#endregion about */
+
+/*#region gallery */
+#gallery h1 {
+    text-align: center;
+    color: white;
+}
+
+.galleryC {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 40px;
+    padding: 40px;
+    padding-right: 30px;
+}
+
+.galleryI {
+    position: relative;
+}
+
+.galleryI img {
+    width: 100%;
+    filter: saturate(100%);
+    transition: .5s;
+}
+
+.galleryI img:hover {
+    width: 100%;
+    filter: saturate(20%);
+    transition: .5s;
+}
+
+/*#endregion products */
+
+/*#region footer */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #03020b;
+    padding: 50px 0;
+}
+
+.footerC {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    opacity: .9;
+}
+
+.footerC ul li {
+    height: 40px;
+    line-height: 40px;
+    opacity: .8;
+    transition: .3s;
+    color: white;
+}
+
+.footerC ul li:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+.footerC h5 {
+    color: white;
+}
+
+/*#endregion footer */
+
+/*#region login */
+#_login {
+    background-color: #03020b;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 5.8em 0;
+}
+
+#_login h4 {
+    padding: 1em 0;
+}
+
+/*#endregion login */
